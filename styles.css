@@ -74,3 +74,17 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* || Custom properties */
+:root {
+  --color-dark-magenta: hsl(300 43% 22%);
+  --color-soft-pink: hsl(333 80% 67%);
+  --color-dark-grayish-magenta: hsl(303 10% 53%);
+  --color-light-grayish-magenta: hsl(300 24% 96%);
+  --color-white: hsl(0 0% 100%);
+  --font-size-base: 0.9375rem;
+  --font-family-primary: "League Spartan", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
