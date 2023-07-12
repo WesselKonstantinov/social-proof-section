@@ -169,3 +169,61 @@ body {
   font-weight: var(--font-weight-bold);
   line-height: normal;
 }
+
+/* || Testimonial styles */
+.testimonials-section {
+  margin-top: 3.0625rem;
+}
+
+.testimonials-section > * + * {
+  margin-top: 1rem;
+}
+
+.testimonial {
+  padding: 2.5rem 2rem 2.1875rem;
+  background-color: var(--color-dark-magenta);
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  line-height: 1.294;
+}
+
+.testimonial__profile {
+  display: flex;
+  gap: 1.4375rem;
+}
+
+.testimonial__profile-info {
+  align-self: center;
+  line-height: normal;
+}
+
+.testimonial__profile-avatar {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.testimonial__profile-name {
+  font-size: 1.0625rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.testimonial__profile-label {
+  margin-top: 0.25rem;
+  color: var(--color-soft-pink);
+  font-weight: var(--font-weight-regular);
+}
+
+.testimonial__text {
+  margin-top: 1.4375rem;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -0.01788em;
+}
+
+.testimonial__text::before {
+  content: "\201C";
+}
+
+.testimonial__text::after {
+  content: "\201D";
+}
