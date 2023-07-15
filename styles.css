@@ -110,7 +110,8 @@ body {
 
 /* || Main content styles */
 .main-content {
-  max-width: 69.375rem;
+  box-sizing: content-box; /* Preserve the max width of the content by excluding the padding */
+  max-width: 33.875rem;
   margin-inline: auto;
   padding: 5.125rem 1.5rem 6.1875rem;
 }
@@ -229,16 +230,17 @@ body {
   content: "\201D";
 }
 
-@media (min-width: 70.5rem) {
+@media (min-width: 61rem) {
   .main-content {
-    box-sizing: content-box; /* Preserve the max width of the content by excluding the padding */
+    max-width: 69.375rem;
     padding: 7.375rem 1.5rem 8.25rem;
   }
 
   .main-content__inner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4.4375rem 13.75rem;
+    grid-template-columns: repeat(2, 27.8125rem);
+    row-gap: 4.4375rem;
+    justify-content: space-between;
   }
 
   .page-intro {
